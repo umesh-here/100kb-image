@@ -16,11 +16,11 @@ const Hero = ({ setImageFile }) => {
           <img src="/assets/hero.svg" />
         </div>
         <div className="md:ml-10">
-          <div className="md:text-6xl text-4xl md:leading-[72px] font-semibold">
+          <h1 className="md:text-6xl text-4xl md:leading-[72px] font-semibold">
             Get any <br />
             image compressed <br />
             under <span className="text-brand">100kb </span>!
-          </div>
+          </h1>
           <div className="mt-10">
             <input
               type="file"
