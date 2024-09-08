@@ -1,4 +1,4 @@
-# React + Vite
+# 100kb-image
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
