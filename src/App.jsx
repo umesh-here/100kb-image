@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Compressor from "./components/Compressor";
 import imageCompression from "browser-image-compression";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [imageFile, setImageFile] = useState(null);
@@ -93,6 +94,20 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black-400">
+      <Helmet>
+        <meta property="title" content="Online Image Compressor" />
+        <meta
+          name="description"
+          content="100kb-image is the ultimate image optimizer to compress your images in JPEG, GIF and PNG formats to the minimum possible size."
+        />
+        <meta property="og:title" content="Online Image Compressor" />
+        <meta
+          property="og:description"
+          content="100kb-image is the ultimate image optimizer to compress your images in JPEG, GIF and PNG formats to the minimum possible size."
+        />
+        <meta property="og:image" content="/assets/hero.svg" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Header />
       <Hero setImageFile={setImageFile} />
       {originalImage != null ? (
