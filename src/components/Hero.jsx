@@ -13,7 +13,7 @@ const Hero = ({ setImageFile }) => {
     <div className="md:container md:mx-auto mx-5 md:py-20 py-4">
       <div className="grid md:grid-cols-2 grid-cols-1 md:items-center gap-8">
         <div className="md:order-last">
-          <img src="/assets/hero.svg" />
+          <img src="/assets/hero.svg" alt="100kb-image hero" />
         </div>
         <div className="md:ml-10">
           <h1 className="md:text-6xl text-4xl md:leading-[72px] font-semibold">
@@ -22,7 +22,11 @@ const Hero = ({ setImageFile }) => {
             under <span className="text-brand">100kb </span>!
           </h1>
           <div className="mt-10">
+            <label htmlFor="file-upload" className="sr-only">
+              Upload an image
+            </label>
             <input
+              id="file-upload"
               type="file"
               accept="image/*"
               onChange={handleImageUpload}
