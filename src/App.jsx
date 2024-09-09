@@ -44,7 +44,7 @@ function App() {
 
       // Compression options
       const options = {
-        maxSizeMB: 1,
+        maxSizeMB: 0.1,
         maxWidthOrHeight: 1920,
         useWebWorker: true,
       };
